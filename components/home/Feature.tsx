@@ -4,7 +4,7 @@ import React from 'react'
 export default function Feature() {
 
     const styles = {
-        wrapper: 'wrapper sectionMargin w-full h-[100vh]',
+        wrapper: 'wrapper sectionMargin w-full h-full lg:h-[100vh]',
         container: 'lg:relative w-full h-full',
         pinkCover: 'bg-customPink hidden lg:block lg:absolute top-[2rem] w-[90%] h-[650px] right-0',
         image1Container: 'lg:absolute top-0 mb-[2rem] lg:mb-0',

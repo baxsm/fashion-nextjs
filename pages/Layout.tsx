@@ -1,14 +1,17 @@
 import React from 'react'
-import Collection from '../components/Collection'
-import Feature from '../components/Feature'
-import Header from '../components/Header'
+import Header from '../components/common/Header'
 
-export default function Layout() {
+type AllProps = {
+  children: React.ReactNode,
+};
+
+export default function Layout({ children }: AllProps) {
   return (
     <>
       <Header />
-      <Collection />
-      <Feature />
+      <main>
+        {children}
+      </main>
     </>
   )
 }

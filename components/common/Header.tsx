@@ -14,6 +14,10 @@ export default function Header() {
             title: 'Feature',
             href: '#feature',
         },
+        {
+            title: 'Branding',
+            href: '#branding',
+        },
         
     ]
 
