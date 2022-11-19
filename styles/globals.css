@@ -35,7 +35,7 @@ h6 {
 }
 
 .sectionMargin {
-	@apply my-6;
+	@apply py-[4rem];
 }
 
 a {
@@ -44,6 +44,22 @@ a {
 
 ul li {
 	list-style: none;
+}
+
+.title {
+	@apply font-[700] capitalize text-[2.5rem] md:text-[3.75rem];
+}
+
+.subTitle {
+	@apply font-[400] text-[1.125rem] leading-[1.8];
+}
+
+.buttonPrimary {
+	@apply px-12 py-4 lowercase border-2 border-[#d9d9d9] text-[#000] tracking-[1px] hover:border-[#b9b9b9] duration-300;
+}
+
+.buttonSecondary {
+	@apply px-8 py-2 lowercase border-2 border-[#000] text-[#000] tracking-[1px] hover:text-[#fff] hover:bg-[#000] duration-300;
 }
 
 /*********** Header ***********/
@@ -99,10 +115,4 @@ ul li {
 
 .ReactModal__Overlay--before-close {
 	opacity: 0;
-}
-
-/********** Collection ***********/
-
-.buttonPrimary {
-	@apply px-12 py-4 lowercase border-2 border-[#d9d9d9] text-[#000] tracking-[1px] hover:border-[#b9b9b9];
 }
