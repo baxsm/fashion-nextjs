@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Noto+Serif:400,400i,700,700i');
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*********** Common ***********/
 
 * {
     padding: 0;
@@ -30,5 +31,78 @@ h6 {
 }
 
 .wrapper {
-    @apply px-4 md:px-10 xl:px-[10rem]
+    @apply px-[2rem] md:px-[4rem] xl:px-[6rem];
+}
+
+.sectionMargin {
+	@apply my-6;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+/*********** Header ***********/
+
+.modalOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.85);
+	z-index: 99999999999999999;
+}
+
+.reactModal {
+	overflow: hidden;
+	border-radius: 2px;
+	outline: none;
+	z-index: 9999999;
+	max-height: 100vh;
+	min-height: 100vh;
+	background: rgba(0, 0, 0, 0.75);
+	transform: translateX(-200px);
+	transition: all 500ms ease-in-out;
+}
+
+.reactModalHidden {
+	transform: translateX(-100%);
+}
+
+@media screen and (min-width: 768px) {
+	.reactModal {
+		border-right: 1px solid #ccc;
+	}
+}
+
+.ReactModal__Content--after-open {
+	transform: translateX(0px);
+}
+
+.ReactModal__Content--before-close {
+	transform: translateX(-200px);
+}
+
+.ReactModal__Overlay {
+	opacity: 0;
+	transition: all 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+	opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+	opacity: 0;
+}
+
+/********** Collection ***********/
+
+.buttonPrimary {
+	@apply px-12 py-4 lowercase border-2 border-[#d9d9d9] text-[#000] tracking-[1px] hover:border-[#b9b9b9];
 }
