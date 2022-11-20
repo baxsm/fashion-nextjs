@@ -3,10 +3,9 @@ import React from 'react'
 
 export default function Branding() {
 
-
     const styles = {
         wrapper: 'wrapper sectionMargin w-full h-full flex justify-center place-items-center',
-        container: 'text-center flex flex-col justify-center place-items-center gap-[1.5rem] md:p-[20px] lg:p-[80px] xl:p-[250px]',
+        container: 'text-center flex flex-col justify-center place-items-center pb-0 md:pb-0 lg:pb-0 xl:pb-0 gap-[1.5rem] md:p-[20px] lg:p-[80px] xl:p-[250px]',
         titleContainer: '',
         title: 'title',
         subTitleContainer: '',
@@ -16,9 +15,9 @@ export default function Branding() {
     }
 
     return (
-        <div className={styles.wrapper} id="branding">
+        <div className={styles.wrapper}>
             <div className={styles.container}>
-                <div className={styles.titleContainer}>
+                <div className={styles.titleContainer} id="branding">
                     <h2 className={styles.title}>Bohemian Inspired Clothes For Women</h2>
                 </div>
                 <div className={styles.subTitleContainer}>

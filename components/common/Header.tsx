@@ -18,6 +18,10 @@ export default function Header() {
             title: 'Branding',
             href: '#branding',
         },
+        {
+            title: 'Fashion News',
+            href: '#news',
+        },
         
     ]
 

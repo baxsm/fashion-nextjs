@@ -76,6 +76,11 @@ ul li {
 
 .buttonAnchor:hover:after { transform: scaleX(0); border-bottom: solid 2px #fc9892;  }
 
+.titleDimmed {
+	@apply uppercase text-[1.25rem] tracking-[3px] font-[400];
+	font-family: Raleway,sans-serif;
+}
+
 /*********** Header ***********/
 
 .modalOverlay {
