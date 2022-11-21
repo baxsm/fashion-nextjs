@@ -31,6 +31,7 @@ export default function News() {
         bottomRightImage: 'w-full h-[580px] md:w-[355px] md:h-[460px] object-cover',
     }
 
+    
     return (
         <div className={styles.wrapper} id="news">
             <div className={styles.top}>
