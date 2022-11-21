@@ -3,6 +3,7 @@ import Collection from '../components/home/Collection'
 import Feature from '../components/home/Feature'
 import Gifts from '../components/home/Gifts'
 import News from '../components/home/News'
+import Trends from '../components/home/Trends'
 import Layout from './Layout'
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
           <Branding />
           <News />
           <Gifts />
+          <Trends />
       </Layout>
     </>
   )

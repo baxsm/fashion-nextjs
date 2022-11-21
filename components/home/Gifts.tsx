@@ -18,7 +18,6 @@ export default function Gifts() {
         title: 'title',
         subTitleContainer: '',
         subTitle: 'subTitle pr-8',
-
     }
 
     return (

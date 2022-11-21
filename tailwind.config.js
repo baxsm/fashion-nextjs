@@ -5,12 +5,17 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+
+    },
     colors: {
       customPink: '#f4ccd6',
       customBrown: '#f8d0b2',
       customBrown2: '#f6f3ee',
       darkHover: '#757575',
+    },
+    backgroundImage: {
+      'fashionTrends': "url('/images/fashion-trends.jpg')",
     }
   },
   plugins: [],

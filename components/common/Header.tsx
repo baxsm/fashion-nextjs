@@ -26,6 +26,10 @@ export default function Header() {
             title: 'Gifts For Her',
             href: '#gifts',
         },
+        {
+            title: 'Fashion Trends',
+            href: '#trends',
+        },
         
     ]
 

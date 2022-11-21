@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/common/Footer';
 import Header from '../components/common/Header'
 
 type AllProps = {
@@ -12,6 +13,7 @@ export default function Layout({ children }: AllProps) {
       <main>
         {children}
       </main>
+      <Footer />
     </>
   )
 }
