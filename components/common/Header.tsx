@@ -22,6 +22,10 @@ export default function Header() {
             title: 'Fashion News',
             href: '#news',
         },
+        {
+            title: 'Gifts For Her',
+            href: '#gifts',
+        },
         
     ]
 
