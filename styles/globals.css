@@ -7,18 +7,18 @@
 /*********** Common ***********/
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 html,
 body {
-    scroll-behavior: smooth;
-    color: #111;
-    background: #fff;
-    font-family: Raleway,sans-serif;
-    user-select: none;
+	scroll-behavior: smooth;
+	color: #111;
+	background: #fff;
+	font-family: Raleway, sans-serif;
+	user-select: none;
 }
 
 h1,
@@ -27,11 +27,11 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Noto Serif', serif;
+	font-family: 'Noto Serif', serif;
 }
 
 .wrapper {
-    @apply px-[2rem] md:px-[4rem] xl:px-[6rem];
+	@apply px-[2rem] md:px-[4rem] xl:px-[6rem];
 }
 
 .sectionMargin {
@@ -67,18 +67,21 @@ ul li {
 }
 
 .buttonAnchor::after {
-	display:block;
+	display: block;
 	content: '';
-	border-bottom: solid 2px #ff3e35;  
-	transform: scaleX(1);  
+	border-bottom: solid 2px #ff3e35;
+	transform: scaleX(1);
 	transition: transform 500ms ease-in-out;
 }
 
-.buttonAnchor:hover:after { transform: scaleX(0); border-bottom: solid 2px #fc9892;  }
+.buttonAnchor:hover:after {
+	transform: scaleX(0);
+	border-bottom: solid 2px #fc9892;
+}
 
 .titleDimmed {
 	@apply uppercase text-[1.25rem] tracking-[3px] font-[400];
-	font-family: Raleway,sans-serif;
+	font-family: Raleway, sans-serif;
 }
 
 /*********** Header ***********/
